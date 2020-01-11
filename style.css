@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    background-color:#d5f5fe;
+    color: #3e555e;
+}
+
+#mainNav {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+#mainNav .navbar-brand {
+    color: #e6edf6;
+    font-size: 1.5rem;
+}
+
+#mainNav .nav-link {
+    color: #e6edf6;
+}
+
+.nav-item .nav-link {
+    margin-right: 13px;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+    background-color: #efb7b2;
+}
+
+.navbar.scrolled {
+    background:rgb(222,192,222);
+    transition: background 500ms;
+}
+
+.carousel-item {
+	height:600px;
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+
+}
+
+.carousel-image-1{
+	background: url('./img/mountain.jpg');
+	background-size: cover;
+}
+.carousel-image-2{
+	background: url('./img/woman_macbook.jpg');
+	background-size: cover;
+}
+.carousel-image-3{
+	background: url('./img/city.jpg');
+	background-size: cover;
+}
+
+@-webkit-keyframes zoom {
+	from {
+	  -webkit-transform: scale(1, 1);
+	}
+	to {
+	  -webkit-transform: scale(1.5, 1.5);
+	}
+  }
+  
+  @keyframes zoom {
+	from {
+	  transform: scale(1, 1);
+	}
+	to {
+	  transform: scale(1.5, 1.5);
+	}
+  }
+  
+  .carousel-inner .carousel-item {
+	-webkit-animation: zoom 20s;
+	animation: zoom 20s;
+  }
+
+
+
+  #footer {
+    background: #2d4f78;
+    color: #71a9cc;
+  }
+
+
+
+

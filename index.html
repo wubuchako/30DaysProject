@@ -1,13 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 </head>
+
 <body>
+  <!-- START HERE -->
+  <nav class="navbar navbar-expand-sm navbar-dark py-0 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">Portfolio</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- showcase -->
+  <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item carousel-image-1 active">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-left mb-10">
+                     
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-2">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block mb-5">
+                        
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+                <div class="container">
+                    <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                        
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <!-- <span class="carousel-control-prev-icon"></span> -->
+          </a>
     
+          <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <!-- <span class="carousel-control-next-icon"></span> -->
+          </a>
+      </div>
+  </section>
+
+  <!-- about section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="container oy-5">
+            <h1>About Me</h1>
+            <hr>
+            <h2>Hello, I'm John Doe and </h2>
+            <h1>
+              <a href="" class="typewrite" data-period="2000" data-type ='[ "I am Web Developer.", "I am Freelancer."]'>
+                <span class="wrap"></span>
+              </a>
+            </h1>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt neque iste cum, sapiente molestiae debitis quos quisquam 
+              explicabo! Corporis, ea delectus? Minima numquam quos magni, voluptates quidem saepe culpa labore!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <sectiuon id="skills">
+    <div class="container">
+      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate provident hic doloremque voluptatibus in deserunt qui iste 
+        similique soluta tempore?</h3>
+  
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, voluptates itaque iusto in reiciendis velit esse vero 
+          molestias deleniti impedit?</p>
+  
+          <hr>
+          <div class="skill">
+            <h4>HTML 5</h4>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" style="width:100%"></div>
+            </div>
+            <h4>CSS 3</h4>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" style="width:100%"></div>
+            </div>
+            <h4>Bootstrap</h4>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" style="width:100%"></div>
+            </div>
+            <h4>Javascript</h4>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" style="width:80%"></div>
+            </div>
+            <h4>React</h4>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" style="width:40%"></div>
+            </div>
+          </div>
+
+    </div>   
+  </sectiuon>
+
+  <!-- services -->
+   <section id="services">
+     <div class="container">
+       <div class="row">
+
+       </div>
+     </div>
+     
+   </section>
+  <!-- work -->
+  <section id="work">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+
+  </section>
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Get in Touch </h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, accusantium.</p>
+
+          <form action="/" method="post" class="contact_form" id="contact_form">
+            <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+            <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+            <div class="input_wrap">
+              <ul>
+                <li><input id="name" type="text" placeholder="Name" /></li>
+                <li><input id="email" type="text" placeholder="Mail" /></li>
+                <li><textarea id="message" placeholder="Message"></textarea></li>
+              </ul>
+              <div class="arlo_tm_button" data-color="pink">
+                <a id="send_message" href="#"><span>Submit</span>	</a>
+              </div>
+            </div>
+          </form> 
+       </div>
+
+      </div>
+    </div>  
+  </section>
+
+  <!-- footer -->
+  <footer id="footer" class="text-center p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy; 
+            <span id="year"></span> created by Chiyomi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+     // Configure Slider
+     $('.carousel').carousel({
+      interval: 4000,
+      pause: 'hover'
+    });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+    
+  </script>
 </body>
+
 </html>
