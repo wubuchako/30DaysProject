@@ -8,25 +8,26 @@ body {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 0.8px;
-    background-color:#d5f5fe;
+    background-color:#fff;
     color: #3e555e;
 }
 
-#mainNav {
-    font-size: 1.2rem;
+/* navbar */
+#mainNavbar {
+    font-size: 0.9rem;
     font-weight: 100;
     margin:0;
     padding:0;
     position: absolute;
 }
 
-#mainNav .navbar-brand {
-    color: #e6edf6;
+#mainNavbar .navbar-brand {
+    color: #7295bd;
     font-size: 1.5rem;
 }
 
-#mainNav .nav-link {
-    color: #e6edf6;
+#mainNavbar .nav-link {
+    color: #f2f2f2;
 }
 
 .nav-item .nav-link {
@@ -35,16 +36,29 @@ body {
 
 .nav-item .nav-link:hover,
 .nav-item .nav-link:focus {
-    background-color: #efb7b2;
-}
+    background-color:	#ed6367;
+ }
+
 
 .navbar.scrolled {
-    background:rgb(222,192,222);
-    transition: background 500ms;
+    background-color: #464944;
+    transition:backgrond 3500ms;
+} 
+
+@media only screen and (max-width: 896px) {
+  #mainNavbar {
+    font-size: 0.7em;
+    padding: 0;
+  }
+
 }
 
+
+
+
+/* carousel */
 .carousel-item {
-	height:600px;
+	height:800px;
 }
 
 .carousel-item:after {
@@ -95,8 +109,61 @@ body {
 	animation: zoom 20s;
   }
 
+.carousel-caption {
+  top: 300px;
+  left: 0;
+  text-transform: uppercase;
+}
 
+  .carousel-caption h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: 	#f2f2f2; 
+  }
 
+/* about */
+#about, #skills, #services, #works, #contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#about h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+hr {
+  height: 3px;
+  width: 200px;
+  background: linear-gradient(to right, white, #527f9e);
+  margin-bottom: 40px;
+}
+
+#about .typewrite {
+  color: #ed6367;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* skills */
+#skills {
+ background: 	#f2f2f2;
+}
+#skills #progress .progress-bar {
+  background-color: #fba58b;
+  height: 15px;
+}
+
+/* services */
+#services {
+  background: 
+}
+/* work */
+#works {
+  background:	#e6edf6;
+}
+/* contact */
+/* footer  */
   #footer {
     background: #2d4f78;
     color: #71a9cc;

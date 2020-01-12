@@ -16,9 +16,9 @@
 
 <body>
   <!-- START HERE -->
-  <nav class="navbar navbar-expand-sm navbar-dark py-0 fixed-top">
+  <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-dark py-0 fixed-top">
     <div class="container">
-      <a href="#" class="navbar-brand">Portfolio</a>
+      <a href="#home" class="navbar-brand">LIVE</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,14 +37,16 @@
             <a href="#services" class="nav-link">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#work" class="nav-link">Work</a>
+            <a href="#works" class="nav-link">Works</a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
+
     </div>
+
   </nav>
 
   <!-- showcase -->
@@ -58,25 +60,22 @@
         <div class="carousel-inner">
             <div class="carousel-item carousel-image-1 active">
                 <div class="container">
-                    <div class="carousel-caption d-none d-sm-block text-left mb-10">
-                     
-                    
+                    <div class="carousel-caption d-none d-sm-block fadeInLeft">
+                     <h3>Hello, My name is John Doe.</h3>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-image-2">
                 <div class="container">
-                    <div class="carousel-caption d-none d-sm-block mb-5">
-                        
-                      
+                    <div class="carousel-caption d-none d-sm-block">
+                      <h3>I am Web developer.</h3>
                     </div>
                 </div>
             </div>
             <div class="carousel-item carousel-image-3">
                 <div class="container">
-                    <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                        
-                     
+                    <div class="carousel-caption d-none d-sm-block fadeInRight">
+                      <h3>I love to design and develop.</h3>
                     </div>
                 </div>
             </div>
@@ -97,19 +96,21 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="container oy-5">
+          <div class="container about-content">
             <h1>About Me</h1>
             <hr>
-            <h2>Hello, I'm John Doe and </h2>
-            <h1>
+            <h3>Hello, I'm John Doe and </h3>
+            <h1 class="pb-3">
               <a href="" class="typewrite" data-period="2000" data-type ='[ "I am Web Developer.", "I am Freelancer."]'>
                 <span class="wrap"></span>
               </a>
             </h1>
-            <p class="d-none d-md-block">
+            <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt neque iste cum, sapiente molestiae debitis quos quisquam 
               explicabo! Corporis, ea delectus? Minima numquam quos magni, voluptates quidem saepe culpa labore!
             </p>
+            <a href="#" class="btn btn-outline-danger">Find Out More</a>
+
           </div>
         </div>
       </div>
@@ -117,65 +118,133 @@
   </section>
 
   <!-- skills -->
-  <sectiuon id="skills">
+  <section id="skills" class="py-5">
     <div class="container">
-      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate provident hic doloremque voluptatibus in deserunt qui iste 
-        similique soluta tempore?</h3>
-  
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, voluptates itaque iusto in reiciendis velit esse vero 
-          molestias deleniti impedit?</p>
-  
-          <hr>
-          <div class="skill">
-            <h4>HTML 5</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width:100%"></div>
-            </div>
-            <h4>CSS 3</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width:100%"></div>
-            </div>
-            <h4>Bootstrap</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width:100%"></div>
-            </div>
-            <h4>Javascript</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width:80%"></div>
-            </div>
-            <h4>React</h4>
-            <div class="progress mb-3">
-              <div class="progress-bar bg-success" style="width:40%"></div>
-            </div>
+      <h1>Skills</h1>
+      <hr>
+      <div class="row">
+          <div class="col-md-6">
+             <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, voluptates itaque iusto in reiciendis velit esse vero 
+                deleniti impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, illum.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium doloribus consectetur perspiciatis quae nulla alias 
+               rem veniam pariatur voluptate.</p>
           </div>
+                
+          <div class="col-md-6">
+               <div id="progress" class="bar mb-5">
+                 <h5>HTML</h5>
+                 <div class="progress mb-2">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100</div>
+                 </div>
+                 <h5>CSS</h5>
+                 <div class="progress mb-2">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100</div>
+                 </div>
+                 <h5>Bootstrap</h5>
+                 <div class="progress mb-2">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100</div>
+                 </div>
+                 <h5>JavaScript</h5>
+                 <div class="progress mb-2">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80</div>
+                 </div>         
+                 <h5>React</h5>
+                 <div class="progress">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50</div>
+                 </div>         
+                </div>
 
+        </div>
+      </div>
     </div>   
-  </sectiuon>
+  </section>
 
   <!-- services -->
-   <section id="services">
+   <section id="services" class="py-5">
      <div class="container">
        <div class="row">
-
+         <div class="col">
+           <h1>Services</h1>
+           <hr>
+           <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/rotating_card_thumb3.png"/>
+                    </div>
+                    <div class="user">
+                        <img class="img-circle" src="images/rotating_card_profile.png"/>
+                    </div>
+                    <div class="content">
+                        <div class="main">
+                            <h3 class="name">Inna Corman</h3>
+                            <p class="profession">Product Manager</p>
+   
+                            <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                        </div>
+                        <div class="footer">
+                            <div class="rating">
+                                <i class="fa fa-mail-forward"></i> Auto Rotation
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end front panel -->
+                <div class="back">
+                    <div class="header">
+                        <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                    </div>
+                    <div class="content">
+                        <div class="main">
+                            <h4 class="text-center">Job Description</h4>
+                            <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+   
+                            <div class="stats-container">
+                                <div class="stats">
+                                    <h4>235</h4>
+                                    <p>
+                                        Followers
+                                    </p>
+                                </div>
+                                <div class="stats">
+                                    <h4>114</h4>
+                                    <p>
+                                        Following
+                                    </p>
+                                </div>
+                                <div class="stats">
+                                    <h4>35</h4>
+                                    <p>
+                                        Projects
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+   
+                    </div>
        </div>
      </div>
      
    </section>
   <!-- work -->
-  <section id="work">
+  <section id="works" class="py-5">
     <div class="container">
       <div class="row">
-
+        <div class="col">
+          <h1>Works</h1>
+          <hr>
+        </div>
       </div>
     </div>
 
   </section>
   <!-- contact -->
-  <section id="contact">
+  <section id="contact" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col">
           <h1>Get in Touch </h1>
+          <hr>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, accusantium.</p>
 
           <form action="/" method="post" class="contact_form" id="contact_form">
@@ -203,8 +272,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p>Copyright &copy; 
-            <span id="year"></span> created by Chiyomi</p>
+          <p>Copyright &copy; 2020 January, created by Chiyomi</p>
         </div>
       </div>
     </div>
@@ -217,23 +285,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-     // Configure Slider
-     $('.carousel').carousel({
-      interval: 4000,
-      pause: 'hover'
-    });
-
-    // Lightbox Init
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-    
-  </script>
 </body>
 
 </html>
